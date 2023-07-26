@@ -1,0 +1,5 @@
+import random
+def game():
+    x = ["Орел", 'Решка']
+    z = random.choice(x)
+    return z
