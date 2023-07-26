@@ -1,0 +1,5 @@
+import random
+def smOle():
+    x = [':)',':(',':|',':/','XD','<3']
+    z = random.choice(x)
+    return z
