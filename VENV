@@ -7,9 +7,13 @@ app = Flask(__name__)
 def start():
     x = 'Привет!Здесь ты узнаешь пару интересных фактов о технологическийх зависимостях.'
     return f'''<h1>{x}</h1>
-    <a href="/random_fact">Посмотреть случайный факт!</a>'''
+    <a href="/random_fact">Посмотреть случайный факт!</a>
+    <a href="/reshka">Сыграй в Орел или Решка!</a>'''
 
-    
+@app.route("/reshka")
+def reshka():
+    orel = ['Орел - ты выйграл(-ла)','Решка - ты проиграл(-ла)']
+    return f'<p>{random.choice(orel)}</p>'
     
 
 
